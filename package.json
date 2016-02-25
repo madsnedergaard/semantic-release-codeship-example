@@ -1,0 +1,30 @@
+{
+  "name": "semantic-release-codeship-example",
+  "description": "Example of using semantic-release with Codeship to automatically deploy NPM packages",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Merott/semantic-release-codeship-example.git"
+  },
+  "author": "MM",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha index.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "generateNotes": "./node_modules/@semantic-release/release-notes-generator",
+    "verifyConditions": [
+      "./node_modules/@semantic-release/condition-codeship"
+    ]
+  },
+  "devDependencies": {
+    "@semantic-release/condition-codeship": "^1.1.0",
+    "@semantic-release/release-notes-generator": "^2.0.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "semantic-release": "^4.3.5",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
