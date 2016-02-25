@@ -17,6 +17,12 @@ describe('test app', function() {
   });
 
   describe('hello()', function() {
+    it('prints "Hello Stranger!" when no arguments given"', function() {
+      app.hello();
+
+      expect(console.log).to.have.been.calledWith('Hello Stranger!');
+    });
+
     it('prints "Hello you!" when argument "you" is given', function() {
       app.hello("you");
       expect(console.log).to.have.been.calledWith('Hello you!');
