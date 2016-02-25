@@ -17,6 +17,9 @@ describe('test app', function() {
   });
 
   describe('hello()', function() {
-    // TODO: to be done!
+    it('prints "Hello you!" when argument "you" is given', function() {
+      app.hello("you");
+      expect(console.log).to.have.been.calledWith('Hello you!');
+    });
   });
 });
