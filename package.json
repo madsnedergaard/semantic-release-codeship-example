@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/Merott/semantic-release-codeship-example.git"
   },
-  "author": "MM",
+  "author": "Merott Movahedi",
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha index.test.js",
