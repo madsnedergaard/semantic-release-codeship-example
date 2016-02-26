@@ -25,6 +25,7 @@ link to the Github project, and configure with:
 
    ```
    nvm install 5
+   nvm use 5
    npm install
    ```
 
