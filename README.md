@@ -5,10 +5,6 @@
 An example of using [`semantic-release`](https://github.com/semantic-release/semantic-release)
 to automatically publish a module from [Codeship](https://codeship.com) to NPM.
 
-
-An example node module that is automatically released to NPM via Code when
-new commits are made to the master branch.
-
 # Set up
 
 _Note: if you want to try this for yourself, you must first clone/fork the
