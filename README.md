@@ -67,20 +67,20 @@ release notes: https://github.com/Merott/semantic-release-codeship-example/relea
 
 1. Install Codeship-condition plugin
 
-```
-npm install -D @semantic-release/condition-codeship
-```
+  ```
+  npm install -D @semantic-release/condition-codeship
+  ```
 
 2. Setup Codeship-condition plugin configuration
 
-Add the following code in package.json:
+  Add the following code in package.json:
 
-```
-"release": {
-  "verifyConditions": [
-    "./node_modules/@semantic-release/condition-codeship"
-  ]
-},
-```
+  ```
+  "release": {
+    "verifyConditions": [
+      "./node_modules/@semantic-release/condition-codeship"
+    ]
+  },
+  ```
 
 3. Now commit and push to your git `master` branch, and then it should work.
