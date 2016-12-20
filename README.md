@@ -63,7 +63,7 @@ project.
 We're also making use of the `generateNotes` plugin to automatically generate
 release notes: https://github.com/Merott/semantic-release-codeship-example/releases
 
-## Additional steps when setting up yourself (without cloning this repository)
+## Additional steps when setting up without cloning this repository
 
 1. Install Codeship-condition plugin
 
